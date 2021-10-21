@@ -189,15 +189,15 @@ function capitalize(text) {
   // Ensuring Only Fire on Correct Page
   function confirmPage() {
     const page = window.location.href,
-        local = [page.includes('localhost:1313')],
+        local = [page.includes('localhost:1818')],
         live = [
           page.includes('https://texp.wiki'), 
           page.includes('https://texp.netlify.app'),
           page.includes('https://total-expert.netlify.app')
         ],
-        modals = [page.includes('/introduction')],
-        confirmPass = 'Modal script should be running 😎',
-        confirmFail = 'Modal script should not be running 🧐';
+        modals = [page.includes('/')],
+        confirmPass = 'Contact script should be running 😎',
+        confirmFail = 'Contact script should not be running 🧐';
     var result;
   
     function checkPage(arr, val) {
