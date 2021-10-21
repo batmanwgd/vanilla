@@ -1,2 +1,2 @@
 # Vanilla
-Vanilla Setups for Installs of Various Tech Stacks
+_Vanilla Setups for Installs of Various Tech Stacks_
