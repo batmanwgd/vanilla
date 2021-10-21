@@ -1,0 +1,99 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"search.collapseResults": "alwaysCollapse",
+		"search.showLineNumbers": true,
+		"git.ignoreLimitWarning": true,
+		"workbench.iconTheme": "Monokai Pro Icons",
+		"editor.maxTokenizationLineLength": 999999,
+		"terminal.integrated.cursorStyle": "line",
+		"files.associations": {
+			"*.svg": "html",
+			"*.njk": "njk",
+			"*.html": "html"
+		  },
+		"workbench.settings.useSplitJSON": true,
+      	"explorer.confirmDragAndDrop": false,
+		"terminal.integrated.shell.osx": "zsh",
+		"terminal.integrated.profiles.osx": {
+			"bash": {
+			  "path": "bash"
+			},
+			"zsh": {
+			  "path": "zsh"
+			},
+			"fish": {
+			  "path": "fish"
+			},
+			"tmux": {
+			  "path": "tmux"
+			},
+			"pwsh": {
+			  "path": "pwsh"
+			}
+		  },
+		"editor.tabSize": 2,
+		"editor.useTabStops": false,
+		"workbench.preferredDarkColorTheme": "Monokai Pro",
+		"editor.wordWrap": "on",
+		"workbench.colorCustomizations": {
+			"titleBar.activeBackground": "#188f69",
+			"titleBar.activeForeground": "#fffffff3",
+
+		},
+		"banner-comments-plus.configs": {
+			"Spacey": {
+			  "font": "Star Wars",
+			  "horizontalLayout": "default",
+			  "verticalLayout": "default",
+			  "trimTrailingWhitespace": false,
+			  "trimEmptyLines": false,
+			  "prefix": "",
+			  "suffix": "",
+			  "perLinePrefix": " ",
+			  "commentStyle": "block"
+			},
+			"AnsiLines": {
+			  "font": "ANSI Regular Fixed",
+			  "horizontalLayout": "default",
+			  "verticalLayout": "default",
+			  "trimTrailingWhitespace": true,
+			  "trimEmptyLines": true,
+			  "prefix": "",
+			  "suffix": "",
+			  "perLinePrefix": " ",
+			  "commentStyle": "block"
+			}
+		},
+		"todo-tree.general.tags": [
+      "BUG",
+      "HACK",
+      "FIXME",
+      "TODO",
+      "XXX",
+      "[ ]",
+      "[x]"
+    ],
+    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+    "monokaiPro.fileIconsMonochrome": false,
+    "colorful-comments.highlightPlainText": true,
+    "colorful-comments.multilineComments": true,
+    "files.exclude": {
+      "**/.classpath": true,
+      "**/.project": true,
+      "**/.settings": true,
+      "**/.factorypath": true
+    },
+    "webhint.enableTelemetry": "enabled",
+    "explorer.confirmDelete": false
+	},
+	"extensions": {
+		"recommendations": [
+			"nicholashsiang.vscode-javascript-comment"
+		]
+	}
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Vanilla",
+  "version": "1.0.0",
+  "description": "Vanilla Setups for Installs of Various Tech Stacks",
+  "main": "index.js",
+  "repository": "git@github.com:batmanwgd/vanilla.git",
+  "author": "Kaska <batmanwgd@gmail.com>",
+  "license": "CCO"
+}
