@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-security-policy" content="unsafe-inline">
+    <meta http-equiv="default-style" content="css/styles.css">
+    <meta name="author" content="Kaska Miskolczi (BatmanWGD)">
+    <meta name="keywords" content="">
+    <meta name="description" content"Vanilla template setups for various tech stacks">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="" content="">
+    <!-- Xtras -->
+    <link rel="stylesheet" href="css/emoji-rating.css">
+    <title>Vanilla NodeJS</title>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <p>How are you feeling today?</p><br/>
+    <ul class="feedback">
+      <li class="angry">
+        <div id="angry">
+            <svg class="eye left"><use xlink:href="#eye"></svg>
+            <svg class="eye left right rightEye"><use xlink:href="#eye"></svg>
+            <svg class="mouth"><use xlink:href="#mouth"></svg>
+        </div>
+      </li>
+      <li class="sad">
+          <div id="sad">
+              <svg class="eye left"><use xlink:href="#eye"></svg>
+              <svg class="eye left right rightEye"><use xlink:href="#eye"></svg>
+              <svg class="mouth"><use xlink:href="#mouth"></svg>
+          </div>
+      </li>
+      <li class="ok">
+          <div id="ok"></div>
+      </li>
+      <li class="good">
+          <div id="good">
+              <svg class="eye left"><use xlink:href="#eye"></svg>
+              <svg class="eye left right rightEye"><use xlink:href="#eye"></svg>
+              <svg class="mouth"><use xlink:href="#mouth"></svg>
+          </div>
+      </li>
+      <li class="happy active">
+          <div id="happy">
+              <svg class="eye left"><use xlink:href="#eye"></svg>
+              <svg class="eye left right rightEye"><use xlink:href="#eye"></svg>
+          </div>
+      </li>
+    </ul>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 4" id="eye"><path d="M1,1 C1.83333333,2.16666667 2.66666667,2.75 3.5,2.75 C4.33333333,2.75 5.16666667,2.16666667 6,1"></path></symbol><symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 7" id="mouth"><path d="M1,5.5 C3.66666667,2.5 6.33333333,1 9,1 C11.6666667,1 14.3333333,2.5 17,5.5"></path></symbol></svg>
+    <!-- <section>
+      <p><a href="markdown/index.html">checkout example <b>rendered</b> markdown</a></p>
+    </section> -->
+    <script type="application/javascript" src="js/emoji-rating.js"></script>
+  </body>
+</html>

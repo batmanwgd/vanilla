@@ -11,47 +11,129 @@
     <meta name="" content="">
     <!-- Xtras -->
     <link rel="stylesheet" href="css/emoji-rating.css">
+    <link rel="stylesheet" href="css/contact.css">
     <title>Vanilla NodeJS</title>
   </head>
   <body>
     <h1>Hello World!</h1>
-    <p>How are you feeling today?</p><br/>
-    <ul class="feedback">
-      <li class="angry">
-        <div id="angry">
-            <svg class="eye left"><use xlink:href="#eye"></svg>
-            <svg class="eye left right rightEye"><use xlink:href="#eye"></svg>
-            <svg class="mouth"><use xlink:href="#mouth"></svg>
-        </div>
-      </li>
-      <li class="sad">
-          <div id="sad">
-              <svg class="eye left"><use xlink:href="#eye"></svg>
-              <svg class="eye left right rightEye"><use xlink:href="#eye"></svg>
-              <svg class="mouth"><use xlink:href="#mouth"></svg>
-          </div>
-      </li>
-      <li class="ok">
-          <div id="ok"></div>
-      </li>
-      <li class="good">
-          <div id="good">
-              <svg class="eye left"><use xlink:href="#eye"></svg>
-              <svg class="eye left right rightEye"><use xlink:href="#eye"></svg>
-              <svg class="mouth"><use xlink:href="#mouth"></svg>
-          </div>
-      </li>
-      <li class="happy active">
-          <div id="happy">
-              <svg class="eye left"><use xlink:href="#eye"></svg>
-              <svg class="eye left right rightEye"><use xlink:href="#eye"></svg>
-          </div>
-      </li>
-    </ul>
-    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 4" id="eye"><path d="M1,1 C1.83333333,2.16666667 2.66666667,2.75 3.5,2.75 C4.33333333,2.75 5.16666667,2.16666667 6,1"></path></symbol><symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 7" id="mouth"><path d="M1,5.5 C3.66666667,2.5 6.33333333,1 9,1 C11.6666667,1 14.3333333,2.5 17,5.5"></path></symbol></svg>
     <!-- <section>
-      <p><a href="markdown/index.html">checkout example <b>rendered</b> markdown</a></p>
+      <p>How are you feeling today?</p><br/>
+      <ul class="feedback">
+        <li class="angry">
+          <div id="angry">
+              <svg class="eye left"><use xlink:href="#eye"></svg>
+              <svg class="eye left right rightEye"><use xlink:href="#eye"></svg>
+              <svg class="mouth"><use xlink:href="#mouth"></svg>
+          </div>
+        </li>
+        <li class="sad">
+            <div id="sad">
+                <svg class="eye left"><use xlink:href="#eye"></svg>
+                <svg class="eye left right rightEye"><use xlink:href="#eye"></svg>
+                <svg class="mouth"><use xlink:href="#mouth"></svg>
+            </div>
+        </li>
+        <li class="ok">
+            <div id="ok"></div>
+        </li>
+        <li class="good">
+            <div id="good">
+                <svg class="eye left"><use xlink:href="#eye"></svg>
+                <svg class="eye left right rightEye"><use xlink:href="#eye"></svg>
+                <svg class="mouth"><use xlink:href="#mouth"></svg>
+            </div>
+        </li>
+        <li class="happy active">
+            <div id="happy">
+                <svg class="eye left"><use xlink:href="#eye"></svg>
+                <svg class="eye left right rightEye"><use xlink:href="#eye"></svg>
+            </div>
+        </li>
+      </ul>
+      <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 4" id="eye"><path d="M1,1 C1.83333333,2.16666667 2.66666667,2.75 3.5,2.75 C4.33333333,2.75 5.16666667,2.16666667 6,1"></path></symbol><symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 7" id="mouth"><path d="M1,5.5 C3.66666667,2.5 6.33333333,1 9,1 C11.6666667,1 14.3333333,2.5 17,5.5"></path></symbol></svg>
     </section> -->
+    <!-- <p> Should you, for whatever reason, wish to make your comments/questions/feedback private or otherwise anonymous, you can do so by filling out <a href="#open-modal"> 👋🏼&nbsp;this associated form</a>.</p> -->
+    <section class="contact-form">
+        <div id="text">Wanna want to write up some feedback, but don't want me to know it's you?<br/>No problem, just fill this simple form out, and I'll get it straight away! 📮😎<br/></div>
+          <div class="error hidden">
+          </div>
+          <div class="success hidden">
+            <!-- <div class="header">Huzzah!&nbsp;🎉</div> -->
+            <p>You've been added to the queue; I'll get back to you ASAP!<br/>Feel free to slack me at anytime in the meantime <a href="https://totalexpert.namely.com/profiles/48821057-c6a1-456f-b91a-71e7308a8941" target="_blank" class="slack" style="color:rgb(0, 99, 191); font-weight:bold;">@Kaska</a>&nbsp;🖖🏼</p>
+          </div>
+          <div id="jsForm" class="mini-modal" novalidate>
+            <!-- <div class="field">
+              <input type="hidden" name="access_token" value="kc4rdpwqn6uwcvrzkvxmqpzc" />
+            </div> -->
+            <div class="field">
+            <label>Overall Feeling</label><br/>
+              <ul class="feedback">
+                <li class="angry">
+                  <div id="angry">
+                      <svg class="eye left"><use xlink:href="#eye"></svg>
+                      <svg class="eye right rightEye"><use xlink:href="#eye"></svg>
+                      <svg class="mouth"><use xlink:href="#mouth"></svg>
+                  </div>
+                </li>
+                <li class="sad">
+                    <div id="sad">
+                        <svg class="eye left"><use xlink:href="#eye"></svg>
+                        <svg class="eye right rightEye"><use xlink:href="#eye"></svg>
+                        <svg class="mouth"><use xlink:href="#mouth"></svg>
+                    </div>
+                </li>
+                <li class="ok">
+                    <div id="ok"></div>
+                </li>
+                <li class="good active">
+                    <div id="good">
+                        <svg class="eye left"><use xlink:href="#eye"></svg>
+                        <svg class="eye right rightEye"><use xlink:href="#eye"></svg>
+                        <svg class="mouth"><use xlink:href="#mouth"></svg>
+                    </div>
+                </li>
+                <li class="happy">
+                    <div id="happy">
+                        <svg class="eye left"><use xlink:href="#eye"></svg>
+                        <svg class="eye right rightEye"><use xlink:href="#eye"></svg>
+                    </div>
+                </li>
+              </ul>
+              <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 4" id="eye"><path d="M1,1 C1.83333333,2.16666667 2.66666667,2.75 3.5,2.75 C4.33333333,2.75 5.16666667,2.16666667 6,1"></path></symbol><symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 7" id="mouth"><path d="M1,5.5 C3.66666667,2.5 6.33333333,1 9,1 C11.6666667,1 14.3333333,2.5 17,5.5"></path></symbol></svg>
+            </div><div class="spacer"></div>
+            <div class="field">
+              <label>Subject</label><br/>
+              <!-- <input id="subject" name="subject" data-validation="required"> -->
+              <select class="clearEye" name="subjects" id="subject" required data-validation="required">
+                <option value="" selected disabled hidden>Please&nbsp;select&nbsp;</option>
+                <optgroup label="Content">
+                  <option value="Wiki">Wiki</option>
+                  <option value="API">API</option>
+                </optgroup>
+                <optgroup label="Feedback">
+                  <option value="Ideas">Idea(s)</option>
+                  <option value="Complaint/Support">Complaint(s)</option>
+                </optgroup>
+              </select>
+            </div><div class="spacer"></div>
+            <div class="field">
+              <label>Comments</label><br/>
+              <textarea class="clearEye" value="" name="comments" placeholder="comments..." data-validation="required"></textarea>
+            </div><div class="spacer"></div>
+            <div class="field">
+              <label>Human? Prove it!</label><br/>
+              <span id="question" data-validation="required" name="captcha"></span>&nbsp;=&nbsp;
+              <input class="clearEye" type="text" data-validation="required" name="answer" id="answer" style="width: 54px; height: 28px; font-size: 28px;">&nbsp;&nbsp;<button id="mathProof">🤓&nbsp;Answer</button>
+            </div>
+            <span class="mathResults"></span><div class="spacer"></div>
+            <!-- <input type="hidden" name="access_token" value="kc4rdpwqn6uwcvrzkvxmqpzc" /> -->
+            <button id="postmail" value="send">Send</button>
+            </div>
+            <br/><em><a href="mailto:kaska.miskolczi@totalexpert.com?subject=TE Wiki Anonymous Feedback Modal" target="_blank" class="canvas-link">Want less anonymity? Email me! 🤙🏼</a></em>
+      </section>
+
     <script type="application/javascript" src="js/emoji-rating.js"></script>
+    <script type="application/javascript" src="js/validate.js"></script>
+    <!-- <script type="application/javascript" src="js/r.js"></script> -->
   </body>
 </html>
