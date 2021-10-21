@@ -2,7 +2,7 @@ const t = '\t',
       n = '\n';
 
 // PDF Object
-const PDFObject = require('pdfobject');
+// const PDFObject = require('pdfobject');
 PDFObject.embed("/doks/prologue/Deduplication_Process.pdf", "#de-duplication"); // API findings 
 PDFObject.embed("/doks/prologue/Getting_Started.pdf", "#getting-started-pdf"); // API findings OAuth_Authorization_Guide.pdf
 PDFObject.embed("/doks/prologue/OAuth_Authorization_Guide.pdf", "#oauth-instructionset");
