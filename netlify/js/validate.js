@@ -193,7 +193,8 @@ function capitalize(text) {
         live = [
           page.includes('https://texp.wiki'), 
           page.includes('https://texp.netlify.app'),
-          page.includes('https://total-expert.netlify.app')
+          page.includes('https://total-expert.netlify.app'),
+          page.includes('https://bvanilla.netlify.app')
         ],
         modals = [page.includes('/')],
         confirmPass = 'Contact script should be running 😎',
