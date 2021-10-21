@@ -1,24 +1,28 @@
 {
-  "name": "Vanilla",
-  "version": "1.0.0",
-  "description": "Vanilla Setups for Installs of Various Tech Stacks",
+  "name": "vnode",
+  "version": "1.0.1",
+  "description": "Vanilla node for my templating needs",
   "main": "index.js",
-  "repository": "git@github.com:batmanwgd/vanilla.git",
+  "repository": "https://github.com/batmanwgd/vanilla.git",
   "author": "Kaska <batmanwgd@gmail.com>",
   "license": "CCO",
+  "dependencies": {
+    "auto-changelog": "^2.3.0"
+  },
   "scripts": {
-    "version": "auto-changelog -p && git add VERSION.md",
+    "version": "auto-changelog -p --output VERSION.md",
     "changelog": "auto-changelog --output CHANGELOG.md --template keepachangelog",
     "jsonlog": "auto-changelog --template json --output changelog-data.json",
     "serve": "node localServer.js",
     "mbackups": "mkdir module-backups/$(date +\"%H:%M@%d-%m-%Y\") && cp -R node_modules module-backups/$(date +\"%H:%M@%d-%m-%Y\")",
-    "release": "standard-version",
-    "release:dry-run": "standard-version --dry-run"
+    "release": "yarn version",
+    "release:dry-run": "yarn version --dry-run"
   },
   "auto-changelog": {
     "unreleased": true,
     "commitLimit": false,
     "releaseSummary": true,
+    "issuePattern": "ISSUE{id}: ",
     "breakingPattern": "BREAKING CHANGE: "
   }
 }
