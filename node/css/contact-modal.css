@@ -1,0 +1,82 @@
+label {
+  font-weight: 800;
+}
+.modal-window {
+  position: fixed;
+  width: 100%;
+  background-color: hsla(0, 0%, 14%, 0.97) !important;
+  z-index: 999;
+  visibility: hidden;
+  /* opacity: 0; */
+  pointer-events: none;
+  transition: all 0.3s;
+  font-size: 16px;
+  line-height: 24px;
+}
+.modal-window:target {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal-window > div {
+  /* width: 345.6px;
+  height: 630.8px; */
+  width: 80%;
+  max-width: 600px;
+  position: absolute;
+  top: 40%;
+  left: 36%;
+  line-height: 24px;
+  transform: matrix(1, 0, 0, 1, -172.8, -315.4);
+  margin-top: 16px;
+  padding: 32px;
+  background: lightblue;
+  border-radius: 33.6px;
+}
+.modal-window header {
+  font-weight: bold;
+}
+.modal-window h1 {
+  font-size: 22px;
+  margin: 0 0 15px;
+  color: #002A3E;
+}
+.modal-window #text, .modal-window label {
+  color: #002A3E;
+}
+.modal-window #text {
+  font-size: 16.4px;
+  font-weight: normal;
+}
+.modal-window label {
+  color: #002A3E;
+  font-size: 17px;
+  font-weight: 600;
+}
+.modal-window button {
+  background: #002A3E;
+  border: none;
+  border-radius: 8px;
+  padding: 4px 12.8px;
+  color: grey;
+}
+.modal-window select, .modal-window textarea, .modal-window button, .modal-window input, .modal-window form, .modal-window .canvas-link {
+  font-size: 16px;
+}
+html body.doks.single.dark div.wrap.container div.content div.row.flex-xl-nowrap main.doks-content.col-lg-11.col-xl-9 div#open-modal.modal-window div.modal-contents div#jsForm.mini-modal div.field, html body.doks.single.dark div.wrap.container div.content div.row.flex-xl-nowrap main.doks-content.col-lg-11.col-xl-9 div#open-modal.modal-window div.modal-contents em a.canvas-link, html body.doks.single.dark div.wrap.container div.content div.row.flex-xl-nowrap main.doks-content.col-lg-11.col-xl-9 div#open-modal.modal-window div.modal-contents a.modal-close {
+  color: #002A3E;
+}
+.modal-close {
+  color: grey;
+  font-size: 12.8px;
+  position: absolute;
+  right: 17.2667px;
+  text-align: center;
+  top: 25.7833px;
+  width: 71.6px;
+  text-decoration: none;
+}
+.modal-close:hover {
+  color: black;
+}
+/* Demo Styles */

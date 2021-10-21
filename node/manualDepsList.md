@@ -99,3 +99,14 @@ info All dependencies
 ├─ yargs@11.1.1
 └─ yarn-version-bump@0.0.4
 ```
+
+### 2021-10-21@14:01
+`yarn add pdfobject --save`
+
+```sh
+info Direct dependencies
+└─ pdfobject@2.2.7
+info All dependencies
+└─ pdfobject@2.2.7
+✨  Done in 0.94s.
+```
