@@ -1,0 +1,82 @@
+[
+  {
+    "isoDate": "2021-10-21",
+    "niceDate": "21 October 2021",
+    "diff": "HEAD",
+    "href": null,
+    "major": false,
+    "minor": false,
+    "tag": null,
+    "title": "Unreleased",
+    "date": "2021-10-21T14:36:53.277Z",
+    "summary": null,
+    "commits": [
+      {
+        "hash": "f959c3056fb9fa64fb8198cb6a4b552d05910ba9",
+        "shorthash": "f959c30",
+        "author": "Bruce Wayne",
+        "email": "felenk@outlook.hu",
+        "date": "2021-10-21T13:47:45.000Z",
+        "subject": "Initial commit",
+        "message": "Initial commit",
+        "fixes": null,
+        "href": "https://github.com/batmanwgd/vanilla/commit/f959c3056fb9fa64fb8198cb6a4b552d05910ba9",
+        "breaking": false,
+        "files": 3,
+        "insertions": 227,
+        "deletions": 0,
+        "merge": null
+      },
+      {
+        "hash": "7346b74b63f540b9b969de4bb7d508d551e58d52",
+        "shorthash": "7346b74",
+        "author": "Kaska",
+        "email": "felenknyuszika@gmail.com",
+        "date": "2021-10-21T13:55:59.000Z",
+        "subject": "initial setup",
+        "message": "initial setup",
+        "fixes": null,
+        "href": "https://github.com/batmanwgd/vanilla/commit/7346b74b63f540b9b969de4bb7d508d551e58d52",
+        "breaking": false,
+        "files": 3,
+        "insertions": 113,
+        "deletions": 0,
+        "merge": null
+      },
+      {
+        "hash": "b68009cfff5cec5c685fef6ae3e44044230b6755",
+        "shorthash": "b68009c",
+        "author": "Kaska",
+        "email": "felenknyuszika@gmail.com",
+        "date": "2021-10-21T13:57:39.000Z",
+        "subject": "initial setup",
+        "message": "initial setup",
+        "fixes": null,
+        "href": "https://github.com/batmanwgd/vanilla/commit/b68009cfff5cec5c685fef6ae3e44044230b6755",
+        "breaking": false,
+        "files": 2,
+        "insertions": 4,
+        "deletions": 1,
+        "merge": null
+      },
+      {
+        "hash": "7c48eb791c8a63320005d54d17311305d8a3f75b",
+        "shorthash": "7c48eb7",
+        "author": "Kaska",
+        "email": "felenknyuszika@gmail.com",
+        "date": "2021-10-21T13:58:10.000Z",
+        "subject": "initial setup",
+        "message": "initial setup",
+        "fixes": null,
+        "href": "https://github.com/batmanwgd/vanilla/commit/7c48eb791c8a63320005d54d17311305d8a3f75b",
+        "breaking": false,
+        "files": 1,
+        "insertions": 1,
+        "deletions": 1,
+        "merge": null
+      }
+    ],
+    "merges": [],
+    "fixes": []
+  }
+]

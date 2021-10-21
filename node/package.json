@@ -24,5 +24,8 @@
     "releaseSummary": true,
     "issuePattern": "ISSUE{id}: ",
     "breakingPattern": "BREAKING CHANGE: "
+  },
+  "devDependencies": {
+    "yarn-version-bump": "^0.0.4"
   }
 }

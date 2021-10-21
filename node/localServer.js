@@ -41,6 +41,12 @@ http.createServer(function(request, response) {
       response.end();
     });
   });
+  fs.watch(filename, (event, filename) => {
+    var timestamp = new Date().toLocaleTimeString('en-US');
+    if (filename) {
+      console.log(`${filename} file changed: ${timestamp}`);
+    }
+  });
 }).listen(parseInt(port, 10));
 
 console.log("Static file server running at\n  => http://localhost:" + port + "/\nCTRL + C to shutdown");
