@@ -1,0 +1,33 @@
+[build]
+  command = "yarn build && yarn export"
+  publish = "netlify"
+  ignore = "git log -1 --pretty=%B | grep dependabot"
+
+[build.environment]
+  NODE_VERSION = "16.3.0"
+  NPM_VERSION = "7.16.0"
+
+[context.production]
+  command = "yarn run build"
+
+[context.deploy-preview]
+  command = "yarn run build -- -b $DEPLOY_PRIME_URL"
+
+[context.branch-deploy]
+  command = "yarn run build -- -b $DEPLOY_PRIME_URL"
+
+[dev]
+  framework = "#custom"
+  command = "yarn run serve"
+  targetPort = 1818
+  port = 8888
+  autoLaunch = false
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "default-src * 'unsafe-inline' 'unsafe-eval'; script-src * 'unsafe-inline' 'unsafe-eval'; connect-src * 'unsafe-inline'; img-src * data: blob: 'unsafe-inline'; frame-src *; style-src * 'unsafe-inline';"
+    Referrer-Policy = "unsafe-url"
+    Access-Control-Request-Method= "GET, OPTIONS"
+    X-XSS-Protection = "0"
+
