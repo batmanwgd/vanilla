@@ -21,19 +21,19 @@
 
 # Production context: all deploys from the Production branch set in your site’s
 # Branches settings in the UI will inherit these settings.
-[context.production]
-  publish = "netlify/"
-  command = "make hello"
+# [context.production]
+#   publish = "netlify/"
+#   command = "make hello"
   # environment = { ACCESS_TOKEN = "super secret", NODE_VERSION = "14.15.3" }
 
 # Deploy Preview context: all deploys generated from a pull/merge request will
 # inherit these settings.
-[context.deploy-preview]
-  publish = "dist/"
+# [context.deploy-preview]
+#   publish = "dist/"
 
 # Here is another way to define context specific environment variables.
-[context.deploy-preview.environment]
-  ACCESS_TOKEN = "not so secret"
+# [context.deploy-preview.environment]
+#   ACCESS_TOKEN = "not so secret"
 
 # Branch Deploy context: all deploys that are not from a pull/merge request or
 # from the Production branch will inherit these settings.
