@@ -1,5 +1,5 @@
 {
-  "name": "Vanilla",
+  "name": "vanilla",
   "version": "1.0.0",
   "description": "Vanilla Setups for Installs of Various Tech Stacks",
   "main": "index.js",
@@ -13,7 +13,8 @@
     "serve": "node localServer.js",
     "mbackups": "mkdir module-backups/$(date +\"%H:%M@%d-%m-%Y\") && cp -R node_modules module-backups/$(date +\"%H:%M@%d-%m-%Y\")",
     "release": "standard-version",
-    "release:dry-run": "standard-version --dry-run"
+    "release:dry-run": "standard-version --dry-run",
+    "build": "echo 'SA-WEET!'"
   },
   "auto-changelog": {
     "unreleased": true,

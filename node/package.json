@@ -16,7 +16,8 @@
     "serve": "node localServer.js",
     "mbackups": "mkdir module-backups/$(date +\"%H:%M@%d-%m-%Y\") && cp -R node_modules module-backups/$(date +\"%H:%M@%d-%m-%Y\")",
     "release": "yarn version",
-    "release:dry-run": "yarn version --dry-run"
+    "release:dry-run": "yarn version --dry-run",
+    "build": "echo 'SA-WEET!'"
   },
   "auto-changelog": {
     "unreleased": true,
