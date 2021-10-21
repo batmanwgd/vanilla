@@ -6,6 +6,9 @@
   "repository": "git@github.com:batmanwgd/vanilla.git",
   "author": "Kaska <batmanwgd@gmail.com>",
   "license": "CCO",
+  "dependencies": {
+    "auto-changelog": "^2.3.0"
+  },
   "scripts": {
     "version": "auto-changelog -p && git add VERSION.md",
     "changelog": "auto-changelog --output CHANGELOG.md --template keepachangelog",
@@ -14,6 +17,7 @@
     "mbackups": "mkdir module-backups/$(date +\"%H:%M@%d-%m-%Y\") && cp -R node_modules module-backups/$(date +\"%H:%M@%d-%m-%Y\")",
     "release": "standard-version",
     "release:dry-run": "standard-version --dry-run",
+    "prebuild": "auto-changelog -p --output NETLIFY.md --template keepachangelog --unreleased false",
     "build": "echo 'SA-WEET!'"
   },
   "auto-changelog": {

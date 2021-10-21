@@ -17,6 +17,7 @@
     "mbackups": "mkdir module-backups/$(date +\"%H:%M@%d-%m-%Y\") && cp -R node_modules module-backups/$(date +\"%H:%M@%d-%m-%Y\")",
     "release": "yarn version",
     "release:dry-run": "yarn version --dry-run",
+    "prebuild": "auto-changelog -p --output NETLIFY.md --template keepachangelog --unreleased false",
     "build": "echo 'SA-WEET!'"
   },
   "auto-changelog": {
