@@ -7,13 +7,14 @@
   "author": "Kaska <batmanwgd@gmail.com>",
   "license": "CCO",
   "dependencies": {
-    "auto-changelog": "^2.3.0"
+    "auto-changelog": "^2.3.0",
+    "requirejs": "^2.3.6"
   },
   "scripts": {
     "version": "auto-changelog -p --output VERSION.md",
     "changelog": "auto-changelog --output CHANGELOG.md --template keepachangelog",
     "jsonlog": "auto-changelog --template json --output changelog-data.json",
-    "serve": "node localServer.js",
+    "serve": "node index.mjs",
     "mbackups": "mkdir module-backups/$(date +\"%H:%M@%d-%m-%Y\") && cp -R node_modules module-backups/$(date +\"%H:%M@%d-%m-%Y\")",
     "release": "yarn version",
     "release:dry-run": "yarn version --dry-run",

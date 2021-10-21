@@ -13,7 +13,7 @@
     "version": "auto-changelog -p && git add VERSION.md",
     "changelog": "auto-changelog --output CHANGELOG.md --template keepachangelog",
     "jsonlog": "auto-changelog --template json --output changelog-data.json",
-    "serve": "node localServer.js",
+    "serve": "node index.mjs",
     "mbackups": "mkdir module-backups/$(date +\"%H:%M@%d-%m-%Y\") && cp -R node_modules module-backups/$(date +\"%H:%M@%d-%m-%Y\")",
     "release": "standard-version",
     "release:dry-run": "standard-version --dry-run",

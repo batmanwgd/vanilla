@@ -10,6 +10,7 @@ http.createServer(function(request, response) {
     , filename = path.join(process.cwd(), uri);
 
   var contentTypesByExtension = {
+    '.md': "text/markdown",
     '.html': "text/html",
     '.css':  "text/css",
     '.js':   "text/javascript"
