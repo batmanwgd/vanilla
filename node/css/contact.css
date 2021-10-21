@@ -1,4 +1,57 @@
+html, body {
+  color: #002A3E;
+}
 section.contact-form {
   text-align: justify;
-
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
 }
+
+#jsForm {
+  padding: 0 12px;
+}
+label {
+  font-weight: 600;
+  margin: 12px 0px;
+  display: inline-block;
+}
+
+div.spacer {
+  margin-top: 12px;
+}
+
+/** validate **/
+.hidden {
+	visibility: hidden;
+  display: none;
+}
+
+.disabled {
+	opacity: 0.5;
+	pointer-events: none;
+}
+
+.error {
+  margin: 12px 0;
+  text-align: center;
+  border-radius: 12px;
+	font-weight: bold;
+	color:whitesmoke;
+	background: #FF6188;
+	padding: 8px;
+}
+
+button, #mathProof, #postmail {
+  background: rgba(0,38,58,0.9);
+  border: none;
+  font-size: 1em;
+  border-radius: 8px;
+  padding: 4px 12.8px;
+  color: #e9ecef;
+}
+
+::selection {
+  background: rgba(117,59,189,0.4);
+  opacity: 0.5;
+  }

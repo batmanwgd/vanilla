@@ -2,10 +2,10 @@ const t = '\t',
       n = '\n';
 
 // PDF Object
-const PDFObject = require('pdfobject');
-PDFObject.embed("/doks/prologue/Deduplication_Process.pdf", "#de-duplication"); // API findings 
-PDFObject.embed("/doks/prologue/Getting_Started.pdf", "#getting-started-pdf"); // API findings OAuth_Authorization_Guide.pdf
-PDFObject.embed("/doks/prologue/OAuth_Authorization_Guide.pdf", "#oauth-instructionset");
+// const PDFObject = require('pdfobject');
+// PDFObject.embed("/doks/prologue/Deduplication_Process.pdf", "#de-duplication"); // API findings 
+// PDFObject.embed("/doks/prologue/Getting_Started.pdf", "#getting-started-pdf"); // API findings OAuth_Authorization_Guide.pdf
+// PDFObject.embed("/doks/prologue/OAuth_Authorization_Guide.pdf", "#oauth-instructionset");
 
 // Text Transformation for Alerts
 function capitalize(text) {
@@ -189,15 +189,15 @@ function capitalize(text) {
   // Ensuring Only Fire on Correct Page
   function confirmPage() {
     const page = window.location.href,
-        local = [page.includes('localhost:1313')],
+        local = [page.includes('localhost:3000')],
         live = [
           page.includes('https://texp.wiki'), 
           page.includes('https://texp.netlify.app'),
           page.includes('https://total-expert.netlify.app')
         ],
-        modals = [page.includes('/introduction')],
-        confirmPass = 'Modal script should be running 😎',
-        confirmFail = 'Modal script should not be running 🧐';
+        contact = [page.includes('/')],
+        confirmPass = 'Contact script should be running 😎',
+        confirmFail = 'Contact script should not be running 🧐';
     var result;
   
     function checkPage(arr, val) {
@@ -208,22 +208,22 @@ function capitalize(text) {
   
     const isLocal = checkPage(local, true),
         isLive = checkPage(live, true),
-        isModal = checkPage(modals, true);
+        isModal = checkPage(contact, true);
   
         if(isLocal & isModal) {
-          // localhost/dev & correct modals page
+          // localhost/dev & correct contact page
           result = console.log('Page:', page, n, confirmPass),
           validate();
         } else if(isLocal & !isModal){
-          // localhost/dev & NOT modals page
+          // localhost/dev & NOT contact page
           result = console.log('Page:', page, n, confirmFail);
         } else if(isLive & isModal) {
-          // live/prod & correct modals page
+          // live/prod & correct contact page
           result = console.log('Page:', page, n, confirmPass),
           // result = console.clear(),
           validate();
         } else {
-          // live/prod & NOT modals page
+          // live/prod & NOT contact page
           //result = console.clear();
           result = console.log('Page:', page, n, confirmFail);
         }

@@ -3,9 +3,9 @@ const t = '\t',
 
 // PDF Object
 // const PDFObject = require('pdfobject');
-PDFObject.embed("/doks/prologue/Deduplication_Process.pdf", "#de-duplication"); // API findings 
-PDFObject.embed("/doks/prologue/Getting_Started.pdf", "#getting-started-pdf"); // API findings OAuth_Authorization_Guide.pdf
-PDFObject.embed("/doks/prologue/OAuth_Authorization_Guide.pdf", "#oauth-instructionset");
+// PDFObject.embed("/doks/prologue/Deduplication_Process.pdf", "#de-duplication"); // API findings 
+// PDFObject.embed("/doks/prologue/Getting_Started.pdf", "#getting-started-pdf"); // API findings OAuth_Authorization_Guide.pdf
+// PDFObject.embed("/doks/prologue/OAuth_Authorization_Guide.pdf", "#oauth-instructionset");
 
 // Text Transformation for Alerts
 function capitalize(text) {
@@ -51,7 +51,7 @@ function capitalize(text) {
   
   var xhr = new XMLHttpRequest(),
     //url = "https://postmail.invotes.com/send?",
-    simple = `subject=${subjectStaple}${subjectContents}&text=${commentsContents}&access_token=${texpToken}`;
+    simple = `subject=${subjectStaple}${subjectContents}&text=${commentsContents}&access_token=${batmanToken}`;
     //data = `${subjectURL}${commentsURL}${akt}`;
     function sendPostmail() {
         xhr.withCredentials = true;
